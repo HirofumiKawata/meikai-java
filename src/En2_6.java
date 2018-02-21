@@ -6,19 +6,20 @@
 	class En2_6{
 		//mainメソッドの宣言。
 		public static void main(String[]args){
+			//キーボードからの入力を行う際にScannerが必要になる
 			Scanner stdIn = new Scanner(System.in);
 
 			//底辺の値の入力を促す
 			System.out.print("底辺：");
-			//xに実数値を読み込む
-			double x = stdIn.nextDouble();
+			//widthに実数値を読み込む
+			double width = stdIn.nextDouble();
 
 			//高さの値の入力を促す
 			System.out.print("高さ：");
-			//yに実数値を読み込む
-			double y = stdIn.nextDouble();
+			//heightに実数値を読み込む
+			double height = stdIn.nextDouble();
 
 			//底辺+高さの平均を表示
-			System.out.println("面積は"+(x*y)/2+"です。");
+			System.out.println("面積は"+(width*height)/2+"です。");
 		}
 }
