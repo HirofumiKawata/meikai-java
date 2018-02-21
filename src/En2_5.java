@@ -6,21 +6,22 @@
 	class En2_5{
 		//mainメソッドの宣言。
 		public static void main(String[]args){
+			//キーボードからの入力を行う際にScannerが必要になる
 			Scanner stdIn = new Scanner(System.in);
 
-			//xの値の入力を促す
-			System.out.print("xの値：");
-			//xに実数値を読み込む
-			double x = stdIn.nextDouble();
+			//numxの値の入力を促す
+			System.out.print("numxの値：");
+			//numxに実数値を読み込む
+			double numx = stdIn.nextDouble();
 
 			//yの値の入力を促す
-			System.out.print("yの値：");
+			System.out.print("numyの値：");
 			//yに実数値を読み込む
-			double y = stdIn.nextDouble();
+			double numy = stdIn.nextDouble();
 
 			//x+yの値を表示
-			System.out.println("合計は"+(x+y)+"です。");
+			System.out.println("合計は"+(numx+numy)+"です。");
 			//x+yの平均を表示
-			System.out.println("平均は"+(x+y)/2+"です。");
+			System.out.println("平均は"+(numx+numy)/2+"です。");
 		}
 }
